@@ -1,5 +1,5 @@
 # Árboles en c++
-Utilizar las definiciones de arboles puestas en practica con el ejercicio de arboles.  
+Con la definicion de arbol y nodo, crear un programa que permita realizar diversas operaciones que demuestren las teorias.
 Cada grupo debe considerar los siguientes criterios:
 
 1. Aplicacion de conceptos tecnicos (ver sección)
