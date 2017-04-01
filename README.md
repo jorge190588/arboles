@@ -31,10 +31,11 @@ Cada grupo debe considerar los siguientes criterios:
 Given (Dado)	Un usuario inicia el programa
 When(Cuando)	Carge el sistema
 Then (Entonces)	debe mostrar un el siguiente menu
-	1. Insertar un nodo
-	2. Listar nodos usando while
-	3. Listar nodos usando recursividad
-	4. Salir
+
+1. Insertar un nodo
+2. Listar nodos usando while
+3. Listar nodos usando recursividad
+4. Salir
 
 ## Caracteristica: como usuario requiero opcion para ingresar nodos consecutivos	
 Given:	Ingreso al menu
@@ -116,6 +117,3 @@ Then: debe de mostrar el resultado
 # VERSION 3. Eliminar un nodo, identificar un nodo (hijo, raiz, padre, hermano, rama, hoja), Describir caracteristicas (camino, longitud, algura, nivel, grado, orden)
 
 # VERSION 4. Recorridos (Amplitud)
-
-  
-
