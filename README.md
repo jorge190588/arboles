@@ -31,7 +31,9 @@ Cada grupo debe considerar los siguientes criterios:
 6. [Curso gratis de C++](https://www.udemy.com/curso-de-cpp-basico-a-avanzado/)
 7. [Cmder](http://cmder.net/) 
 
+# Aplicaciones
 
+1. [Indices en base de datos](https://github.com/jorge190588/basedatosII) (Sistemas de Bases de Datos, 2da Edición - Ramez Elmasri y Shamkant B. Navathe) pg 118.
 
 # VERSION 1. 
 
