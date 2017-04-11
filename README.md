@@ -41,9 +41,9 @@ La primera version del programa incluye crear y mostrar nodos consecutivos.
 
 ### Caracteristica: como usuario necesito acceder al programa y que muestre un menu	
 
-+ **Given(Dado):** Un usuario inicia el programa.
-+ **When(Cuando):**	Carge el sistema
-+ **Then:** (Entonces)	debe mostrar un el siguiente menu
++ **Given(Dado):** un usuario inicia el programa.
++ **When(Cuando):** carge el sistema
++ **Then(Entonces):** debe mostrar un el siguiente menu
 
 Ejemplo:
 
@@ -120,7 +120,7 @@ Ejemplo:
 	Codigo nodo: 0003, Valor del nodo: 30, nodo izquierdo: 006, nodo derecho: 007
 
 Escenario 2	
-+ **Given:+ ** ingreso al menu
++ **Given:** ingreso al menu
 + **When:** accedo a la opcion 3. Lista nodos usando recursividad
 + **Then:**	el resultado se debe ser como el ejemplo
 	
@@ -138,7 +138,7 @@ Ejemplo:
 
 ### Caracteristica: como usuario requiero cambiar reemplazar el titulo de la opcion salir
 
-+ + **Given:** ingreso al menu
++ **Given:** ingreso al menu
 + **When:** carge el sistema
 + **Then:** cambiar la opcion "4. Salir" a "5. Salir"
 
