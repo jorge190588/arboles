@@ -155,10 +155,48 @@ Ejemplo:
      Codigo nodo: 0001, Valor del nodo: 10, nodo izquierdo: 002, valor nodo izquierdo:20, nodo derecho: 003 y valor nodo derecho: 9
 
 
-# VERSION 3. 
+# VERSION 3. Identificar a un nodo y describir sus caracteristicas
 
-Eliminar un nodo, identificar un nodo (hijo, raiz, padre, hermano, rama, hoja), Describir caracteristicas (camino, longitud, algura, nivel, grado, orden)
 
-# VERSION 4. 
+## Caracteristica: como usuario requiero una opcion para eliminar un nodo.
 
-Recorridos (Amplitud)
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion eliminar nodo
++ **And** ingreso el valor del nodo que requiero eliminar
++ **Then:** se debe eliminar en nodo del arbol.
+
+## Caracteristica: como usuario requiero una opcion para identificar a un nodo
+
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion identificar nodo
++ **And** se buscar un nodo por su valor
++ **Then:** debe describir si el nodo es raiz, padre, hijo, hermano, hoja o rama.
+
+## Caracteristica: como usuario requiero una opcion para identificar las caracteristicas de un nodo.
+
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion caracteristicas de un nodo
++ **And** se buscar un nodo por su valor
++ **Then:** debe describir el camino, longitud, altura, nivel, grado y orden.
+
+
+# VERSION 4. Recorridos de un arbol.
+
+
+## Caracteristica: como usuario requiero una opcion para reccorrer el arbol en preorden
+
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion recorrer arbol en preorden
++ **Then:** debe mostrar el resultado del recorrido en preorden
+
+## Caracteristica: como usuario requiero una opcion para reccorrer el arbol en preorden
+
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion recorrer arbol en postorden
++ **Then:** debe mostrar el resultado del recorrido en postorden
+
+## Caracteristica: como usuario requiero una opcion para reccorrer el arbol en inorden
+
++ **Given:** ingreso al menu
++ **When:** selecciona la opcion recorrer arbol en inorden
++ **Then:** debe mostrar el resultado del recorrido en inorden
