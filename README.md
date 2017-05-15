@@ -34,6 +34,10 @@ Cada grupo debe considerar los siguientes criterios:
 # Aplicaciones
 
 1. [Indices en base de datos](https://github.com/jorge190588/basedatosII) (Sistemas de Bases de Datos, 2da Edición - Ramez Elmasri y Shamkant B. Navathe) pg 118.
+2. [Memoria dinamica en windows](https://blogs.technet.microsoft.com/itmanager/2012/02/03/qu-es-memoria-dinmica/)
+3. [Memoria dinamia en virtualizacion](https://technet.microsoft.com/es-es/library/hh750394.aspx)
+4. [Memoria dinamica en contenedores-docker](http://blog.takipi.com/ignora-la-alharaca-5-ideas-erroneas-sobre-docker-que-los-desarrolladores-java-deben-tener-claras/)
+
 
 # VERSION 1. 
 
