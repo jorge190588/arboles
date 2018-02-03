@@ -9,7 +9,7 @@ En este documento pueden agregar los comandos mas usados en Git con una descripc
 ### Descargar repositorio.
 
 ```
-1. git remote add origin https://github.com/jorge190588/basedatosII.git
+1. git remote add origin https://github.com/jorge190588/arboles.git
 ```
 
 ### Crear un commit y actualizar el repositorio.
