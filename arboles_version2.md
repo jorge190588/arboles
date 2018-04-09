@@ -1,4 +1,4 @@
-# VERSION 1. 
+# VERSION 2. 
 
 La primera version del programa incluye crear y mostrar nodos consecutivos.
 
