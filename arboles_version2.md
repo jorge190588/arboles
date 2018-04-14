@@ -50,7 +50,7 @@ Ejemplo:
 Ejemplo:
 
 	Nodo actual: 10, # memoria nodo actual: 0001, # memoria nodo izquierdo: 0002, # memoria nodo derecho: null
-  Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: null, # memoria nodo derecho: null
+  	Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: null, # memoria nodo derecho: null
 
 
 
@@ -70,7 +70,7 @@ Ejemplo:
 + **And (Y):** el usuario acceda a la opcion 1. insertar un nodo
 + **And (Y):** ingrese el valor 30
 + **And (Y):** pulse la tecla enter
-+ **And (Y):** el usuario escribe que el nodo 30 es hijo izquierdo del nodo 10
++ **And (Y):** el usuario escribe que el nodo 30 es hijo derecho del nodo 10
 + **And (Y):** pulse la tecla enter
 + **And (Y):** el programa regrese al menu
 + **When(Cuando):** el usuario acceda a la opcion 2. Listar nodos
@@ -79,8 +79,8 @@ Ejemplo:
 Ejemplo:
 
 	Nodo actual: 10, # memoria nodo actual: 0001, # memoria nodo izquierdo: 0002, # memoria nodo derecho: 0003
-  Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: null, # memoria nodo derecho: null
-  Nodo actual: 30, # memoria nodo actual: 0003, # memoria nodo izquierdo: null, # memoria nodo derecho: null
+  	Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: null, # memoria nodo derecho: null
+  	Nodo actual: 30, # memoria nodo actual: 0003, # memoria nodo izquierdo: null, # memoria nodo derecho: null
   
 
 + **Escenario:** crear el nodo raiz, un nodo izquierdo de la raiz, un nodo derecho de la raiz y un nodo izquierdo
@@ -99,7 +99,7 @@ Ejemplo:
 + **And (Y):** el usuario acceda a la opcion 1. insertar un nodo
 + **And (Y):** ingrese el valor 30
 + **And (Y):** pulse la tecla enter
-+ **And (Y):** el usuario escribe que el nodo 30 es hijo izquierdo del nodo 10
++ **And (Y):** el usuario escribe que el nodo 30 es hijo derecho del nodo 10
 + **And (Y):** pulse la tecla enter
 + **And (Y):** el programa regrese al menu
 + **And (Y):** el usuario acceda a la opcion 1. insertar un nodo
@@ -114,8 +114,8 @@ Ejemplo:
 Ejemplo:
 
 	Nodo actual: 10, # memoria nodo actual: 0001, # memoria nodo izquierdo: 0002, # memoria nodo derecho: 0003
-  Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: 0004, # memoria nodo derecho: null
-  Nodo actual: 30, # memoria nodo actual: 0003, # memoria nodo izquierdo: null, # memoria nodo derecho: null  
-  Nodo actual: 40, # memoria nodo actual: 0004, # memoria nodo izquierdo: null, # memoria nodo derecho: null  
+  	Nodo actual: 20, # memoria nodo actual: 0002, # memoria nodo izquierdo: 0004, # memoria nodo derecho: null
+  	Nodo actual: 30, # memoria nodo actual: 0003, # memoria nodo izquierdo: null, # memoria nodo derecho: null  
+  	Nodo actual: 40, # memoria nodo actual: 0004, # memoria nodo izquierdo: null, # memoria nodo derecho: null  
   
   
