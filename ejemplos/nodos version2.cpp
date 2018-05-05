@@ -63,25 +63,26 @@ void lista::Buscar(){
 	system("pause");
 }
 
-pnodo lista::LeerNodo(int valor, pnodo nodoActual){
+pnodo lista::LeerNodo(int valor, pnodo nodo){
 	cout << "LeerNodo, valor "<<valor<<endl;
 
-	if(nodoActual == NULL){
-   	cout << "nodoActual == NULL"<<endl;
-		return nodoActual;
+	if(nodo == NULL){
+   	cout << "nodo == NULL"<<endl;
+		return nodo;
    }
 
-   int valorNodoActual=nodoActual->valor;
+   int valorNodoActual=nodo->valor;
    if(valorNodoActual == valor){
      	cout << "valorNodoActual == valor"<<endl;
-  		return nodoActual;
+  		return nodo;
    }
 
-	if (nodoActual->siguiente == NULL){
-   		return nodoActual;
+	if (nodo->siguiente == NULL){
+	   cout << "NodoSiguiente == NULL"<<endl;
+   	return nodo;
    }
 
-   pnodo buscarNodo = LeerNodo(valor, nodoActual->siguiente);
+   pnodo buscarNodo = LeerNodo(valor, nodo->siguiente);
    if(buscarNodo != NULL){
    	cout << "buscarNodo != NULL"<<endl;
 		return buscarNodo;
