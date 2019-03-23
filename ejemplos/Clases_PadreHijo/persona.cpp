@@ -31,7 +31,6 @@ void Alumno::mostrarNombreHijo(){
 }
 
 void Alumno::asignarHijo(Alumno nodoHijo){
-	cout << "hijo> "<< &nodoHijo;
 	hijo = &nodoHijo;
 }
 
@@ -61,7 +60,8 @@ string Alumno::leerNombre()
 
 void Alumno::mostrar()
 {
-	cout<<_apellido<<", "<< _nombre <<endl;
-	cout<<"Habilitado "<<_habilitado<<"\n\n"<<endl;
+	cout << "padre #: "<< this << " -- hijo #: "<< hijo<< endl;
+	cout <<"Nombre: " <<_nombre <<", apellido> "<< _apellido <<endl;
+	cout<<", habilitado: "<<_habilitado<<"\n\n"<<endl;
 	return;
 }
