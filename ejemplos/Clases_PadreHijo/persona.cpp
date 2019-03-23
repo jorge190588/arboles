@@ -20,7 +20,7 @@ class Alumno
 		void asignarNombre(string);
 		string leerNombre();
 		void mostrar();
-      void asignarHijo(Alumno);
+      void asignarHijo(Alumno*);
       void mostrarNombreHijo();
 };
 
@@ -30,8 +30,8 @@ void Alumno::mostrarNombreHijo(){
    actual.mostrar();
 }
 
-void Alumno::asignarHijo(Alumno nodoHijo){
-	hijo = &nodoHijo;
+void Alumno::asignarHijo(Alumno *nodoHijo){
+	hijo = nodoHijo;
 }
 
 string Alumno::convertirTextoAmayuscula(string texto){
@@ -41,27 +41,22 @@ string Alumno::convertirTextoAmayuscula(string texto){
 }
 
 //Implementación de la clase Alumno       
-Alumno::Alumno(string nombre, string apellido, bool habilitado)
-{
+Alumno::Alumno(string nombre, string apellido, bool habilitado){
 	_nombre = convertirTextoAmayuscula(nombre);
 	_apellido = apellido;
 	_habilitado = habilitado;
 }
 
-void Alumno::asignarNombre(string nombre)
-{
+void Alumno::asignarNombre(string nombre){
 	_nombre = convertirTextoAmayuscula(nombre);
 }
 
-string Alumno::leerNombre()
-{
+string Alumno::leerNombre(){
 	return _nombre;
 }
 
-void Alumno::mostrar()
-{
+void Alumno::mostrar(){
 	cout << "padre #: "<< this << " -- hijo #: "<< hijo<< endl;
-	cout <<"Nombre: " <<_nombre <<", apellido> "<< _apellido <<endl;
-	cout<<", habilitado: "<<_habilitado<<"\n\n"<<endl;
-	return;
+	cout <<"Nombre: " <<_nombre <<", apellido> "<< _apellido;
+	cout<<", habilitado: "<<_habilitado<<endl;
 }

@@ -6,13 +6,14 @@
 
 int main()
 {
-	Alumno alumno_1 = Alumno("Padre","Jorge");
-   alumno_1.mostrar();
-
-   Alumno alumno_2 = Alumno("Hijo","Santos");
-   alumno_1.asignarHijo(alumno_2);
-   alumno_1.mostrarNombreHijo();
-
+	Alumno raiz = Alumno("Raiz","Jorge");
+	Alumno nodo1 = Alumno("Nodo1","Santos");
+   Alumno nodo2 = Alumno("Nodo2", "Jose");
+   raiz.asignarHijo(nodo1);
+   nodo1.asignarHijo(nodo2);
+   raiz.mostrar();
+   nodo1.mostrar();
+   nodo2.mostrar();
 	system ("pause");
 	return 0;
 
