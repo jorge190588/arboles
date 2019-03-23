@@ -9,11 +9,12 @@ class Alumno
 {
 	private:
    	string convertirTextoAmayuscula(string);
-		string _nombre;
-		string _apellido;
-		int _calificaciones[10];
-		bool _habilitado;
+		string nombre;
+		string apellido;
+		int calificaciones[10];
+		bool habilitado;
       Alumno *hijo;// declarar un puntero de tipo alumno
+      Alumno *direccionMemoria;
 
 	public:
    	Alumno(string, string, bool = true);
@@ -25,9 +26,9 @@ class Alumno
 };
 
 void Alumno::mostrarNombreHijo(){
-	Alumno actual = *hijo;
-	cout << endl << "hijo ";
-   actual.mostrar();
+	Alumno nodoHijo = *hijo;
+	cout << endl << "HIJO: "<< endl;
+   nodoHijo.mostrar();
 }
 
 void Alumno::asignarHijo(Alumno *nodoHijo){
@@ -41,22 +42,23 @@ string Alumno::convertirTextoAmayuscula(string texto){
 }
 
 //Implementación de la clase Alumno       
-Alumno::Alumno(string nombre, string apellido, bool habilitado){
-	_nombre = convertirTextoAmayuscula(nombre);
-	_apellido = apellido;
-	_habilitado = habilitado;
+Alumno::Alumno(string _nombre, string _apellido, bool _habilitado){
+	nombre = convertirTextoAmayuscula(_nombre);
+	apellido = _apellido;
+	habilitado = _habilitado;
+   direccionMemoria=this;
 }
 
-void Alumno::asignarNombre(string nombre){
-	_nombre = convertirTextoAmayuscula(nombre);
+void Alumno::asignarNombre(string _nombre){
+	nombre = convertirTextoAmayuscula(_nombre);
 }
 
 string Alumno::leerNombre(){
-	return _nombre;
+	return nombre;
 }
 
 void Alumno::mostrar(){
-	cout << "padre #: "<< this << " -- hijo #: "<< hijo<< endl;
-	cout <<"Nombre: " <<_nombre <<", apellido> "<< _apellido;
-	cout<<", habilitado: "<<_habilitado<<endl;
+	cout << "Memoria #: "<< direccionMemoria <<endl;
+	cout << "Nombre: " << nombre <<", apellido> "<< apellido;
+	cout << ", habilitado: "<< habilitado<<endl<<endl;
 }
