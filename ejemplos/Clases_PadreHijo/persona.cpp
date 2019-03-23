@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <ctype.h>
 //Declaración de la clases
+using namespace std;
 
 class Alumno
 {

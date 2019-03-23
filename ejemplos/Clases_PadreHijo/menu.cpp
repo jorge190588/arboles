@@ -1,8 +1,8 @@
 #include <iostream.h>
 #include <string>
 #include <conio.h>
+#include <stdlib.h>
 #include "persona.cpp"
-
 
 int main()
 {
