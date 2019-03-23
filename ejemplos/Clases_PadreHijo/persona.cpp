@@ -12,13 +12,27 @@ class Alumno
 		string _apellido;
 		int _calificaciones[10];
 		bool _habilitado;
+      Alumno *hijo;// declarar un puntero de tipo alumno
 
 	public:
    	Alumno(string, string, bool = true);
 		void asignarNombre(string);
 		string leerNombre();
 		void mostrar();
+      void asignarHijo(Alumno);
+      void mostrarNombreHijo();
 };
+
+void Alumno::mostrarNombreHijo(){
+	Alumno actual = *hijo;
+	cout << endl << "hijo ";
+   actual.mostrar();
+}
+
+void Alumno::asignarHijo(Alumno nodoHijo){
+	cout << "hijo> "<< &nodoHijo;
+	hijo = &nodoHijo;
+}
 
 string Alumno::convertirTextoAmayuscula(string texto){
    for(int i = 0; i < texto.length(); i++)
