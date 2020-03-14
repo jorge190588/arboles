@@ -30,6 +30,7 @@ Cada grupo debe considerar los siguientes criterios:
 5. [Git](https://github.com/)
 6. [Curso gratis de C++](https://www.udemy.com/curso-de-cpp-basico-a-avanzado/)
 7. [Cmder](http://cmder.net/) 
+8. [Borland c++](https://drive.google.com/file/d/11UC2slyxZAjuwDk4lqyv1Bce5YJLyWj3/view)
 
 # Aplicaciones
 
