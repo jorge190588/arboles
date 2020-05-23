@@ -25,15 +25,13 @@ struct encabezado{
 FILE *fdd, *fdc;
 int lr, le;
 
-int fh( char *clave )
-{
+int getHashValue( char *clave ){
     int nr = 0;
 
-    for(int i=0; i<strlen(clave); i++)
-    {
+    for(int i=0; i<strlen(clave); i++){
         nr += int(clave[i]);
     }
-    nr = nr%10 + 1;
+    nr = nr%20 + 1;
     return nr;
 }
 
@@ -63,7 +61,7 @@ void escribir()
     /// Inicializando variables
     ed.nrs = 0;
     ec.nrs = 0;
-    fwrite(&ed, le, 1, fdd);
+    fwrite(&ed, le, 1, fdd); //escribe los datos de un archivo en un puntero
     fwrite(&ec, le, 1, fdc);
 
     /// Bucle para insertar varios registros
@@ -76,7 +74,7 @@ void escribir()
 
         fflush(stdin);
         r.sr = -1;
-        r.nr = fh(r.clave);
+        r.nr = getHashValue(r.clave);
 
         cout << " Clave = "<< r.nr << endl;
         pos = (r.nr-1)*lr + le;
@@ -156,7 +154,7 @@ void leer()
 
     fflush(stdin);
     cout << " Ingrese clave : "; gets(v_clave);
-    nr = fh(v_clave);
+    nr = getHashValue(v_clave);
     pos = (nr-1)*lr + le;
 
     fseek(fdd, pos, 0);
@@ -200,36 +198,41 @@ void menu()
     cout << "\t\t METODO DE DISPERSION - HASHING \n\n";
     cout << "\t 1. Escribir              \n";
     cout << "\t 2. Leer                  \n";
-    cout << "\t 3. Salir                 \n";
+    cout << "\t 3. Calcular hash         \n";
+    cout << "\t 4. Salir                 \n";
     cout << "\t >> Ingrese opcion:  ";
 }
 
 /********************** Funcion Principal ***********************/
 
-int main()
-{
-    int op;
+int main(){
+    int menuOption;
     lr = sizeof(struct registro);
-    le = sizeof( struct encabezado);
+    le = sizeof(struct encabezado);
 
-    do
-    {
-        menu(); cin >> op;  cout << endl;
+	char clave[3]={'a','b','c'};
+   int sizeOfRegisterStruct = sizeof(struct registro);
+   int sizeOfHeadStruct = sizeof(struct encabezado);
 
-        switch(op)
+    do{
+        menu(); cin >> menuOption;  cout << endl;
+        switch(menuOption)
         {
             case 1:
                 escribir(); break;
             case 2:
                 leer(); break;
             case 3:
+	            cout << " Ingrese clave : "; gets(clave);
+            	cout << getHashValue(clave)<< "\n";
+               break;
+            case 4:
                 exit(0);
         }
         cout <<"\n\n ";
         system("pause"); system("cls");
 
-    }while(op>0);
-
+    }while(menuOption>0);
 
     return 0;
 }
